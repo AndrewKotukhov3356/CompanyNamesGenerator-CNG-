@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-
-#Please install needed libraries below!
-
-!pip install rusyll
-!pip install markovify==0.8.3
-
 #Please import needed libraries below!
 
 from rusyll import rusyll
