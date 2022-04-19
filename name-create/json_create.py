@@ -29,27 +29,10 @@ def main(input_file, output_file):
 
 # Empty txt file creator function:
 
-
 def create_empty_txt(txtfile, mode):
     with open(txtfile, mode) as jell:
         jell = open(txtfile, mode)
     return jell
-
-# Opening our TF-IDF sorted files:
-
-# NOUNS:
-n = open('nouns.txt', 'r').readlines()
-
-# ADJECTIVES:
-a = open('adjf.txt', 'r').readlines()
-
-# Creating json files for each txt file using our main function:
-
-# NOUNS:
-main(n, 'nouns.json')
-
-# ADJECTIVES:
-main(a, 'adjf.json')
 
 # Class of types we will use:
 
@@ -75,13 +58,4 @@ class WordMaker:
             if len(word) > 3:
                 return word
         raise ValueError("Error!!!")
-
-# Opening json files:
-f = open('nouns.json')
-h = open('adjf.json')
-
-# Two output files:
-json_file1 = json.load(f)
-json_file2 = json.load(h)
-
 
