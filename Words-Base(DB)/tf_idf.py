@@ -1,3 +1,5 @@
+#TF-IDF words generator.
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from spacy.lang.ru.stop_words import STOP_WORDS
 from pymorphy2 import MorphAnalyzer
@@ -11,7 +13,7 @@ import re
 import pandas as pd
 
 
-#Please install ""
+#Please install "https://github.com/explosion/spacy-models/releases/download/ru_core_news_sm-3.2.0/ru_core_news_sm-3.2.0.tar.gz"
 nlp = spacy.load('ru_core_news_sm')
 nlp.Defaults.stop_words |= {
     "например",
