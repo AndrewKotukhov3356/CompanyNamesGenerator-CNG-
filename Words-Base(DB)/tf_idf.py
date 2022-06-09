@@ -131,7 +131,7 @@ nlp.Defaults.stop_words |= {
     "пьян",
     "оштрафуют",
 }
-print(nlp.Defaults.stop_words)
+
 
 # Here you can input any file, for code to run
 st1 = 'tes1'
@@ -275,9 +275,6 @@ bloblist = [
     document(st29),
     document(st30)]
 
-pattern = r"\s*[А-Я]{3}\s*"
-newblob = re.sub(pattern, bloblist)
-print(newblob)
 
 fout = open("output.txt", "w")
 tfIdfVectorizer = TfidfVectorizer(use_idf=True)
